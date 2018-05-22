@@ -1,0 +1,214 @@
+body   {
+@font-face {
+    font-family: 'intro';
+    src: url("../fonts/intro.otf");
+}
+@font-face {
+    font-family: 'Helvetica';
+    src: url("../fonts/Helvetica bold.otf");
+}
+@font-face {
+    font-family: 'pfdindisplaypro';
+    src: url("../fonts/pfdindisplaypro-reg.ttf");
+}
+}
+.top-lane{
+    width: 100%;
+    height: 6px;
+    background-color: #f8e27b;
+    position: relative;
+}
+.top-lane:before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #f8e27b;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    margin-top: -8px;
+    margin-left: -10px;
+    transform: rotate(45deg);
+}
+.header{
+    max-width: 950px;
+    margin: 15px auto 11px auto;
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+li {
+    list-style: none;
+    display: inline-block;
+}
+.sell-block .button {
+    width: 83px;
+    height: 21px;
+    border-radius: 30px 30px 30px 30px;
+    text-decoration: none;
+    background-color: #fae851;
+    display: inline-block;
+    position: relative;
+    font-family: Arial;
+    color: #4e443b;
+    font-size: 14px;
+    font-weight:bold;
+    padding-left: 33px;
+    vertical-align: middle;
+    padding-top:6px;
+    cursor: pointer;
+}
+.sell-block li:first-child{
+    margin-right: 10px;
+}
+.sell-block .button-create:before{
+    content:'';
+    background-image: url(../img/pencil.png);
+    width: 19px;
+    height: 18px;
+    position: absolute;
+    background-position: center;
+    background-repeat:no-repeat;
+    left:8px;
+    top: 4px;
+}
+.sell-block .button-sell:before{
+    content:'';
+    background-image: url(../img/money.png);
+    width: 19px;
+    height: 18px;
+    position: absolute;
+    background-position: center;
+    background-repeat:no-repeat;
+    left:8px;
+    top: 4px;
+}
+.social-block .button{
+    width: 31px;
+    height: 31px;
+    border: 1px solid #2ea6ed;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+.social-block .button-vk{
+    background-image:url("../img/vk.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.social-block .button-ok{
+    background-image:url("../img/ok.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.social-block .button-fb{
+    background-image:url("../img/fb.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact-block .button {
+    color: #0087e4;
+    font-size: 12px;
+    line-height:22px;
+    font-family: Arial;
+    position: relative;
+}
+.contact-block li{
+    margin-right:52px;
+}
+.contact-block li:last-child{
+    margin-right: 0;
+}
+.contact-block .button-skype:before{
+    content: '';
+    position: absolute;
+    background-image:url("../img/skype.png");
+    width: 16px;
+    height: 16px;
+    left: -20px;
+    top: 0px;
+}
+.contact-block .button-icq:before{
+    content: '';
+    position: absolute;
+    background-image:url("../img/icq.png");
+    width: 16px;
+    height: 16px;
+    left: -20px;
+    top: 0px;
+}
+.contact-block .button-email:before{
+    content: '';
+    position: absolute;
+    background-image:url("../img/email.png");
+    width: 16px;
+    height: 16px;
+    left: -20px;
+    top: 0px;
+}
+.lane{
+    width: 100%;
+    border-bottom: 1px solid #b2def8;
+
+}
+
+.top-block{
+    max-width:950px;
+    margin:auto;
+}
+.top-block .left-block{
+    max-width:170px;
+}
+.top-block .phone{
+    font-size: 16px;
+    font-family: Arial;
+    font-weight:bold;
+    color:#676767;
+    max-width:170px;
+    display: inline-block;
+}
+.phone a{
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 18px;
+    color: #0087e4;
+    text-decoration: none;
+    border-bottom: 1px dashed #0087e4;
+    cursor: pointer;
+    margin-right:8px;
+    font-weight:400;
+}
+.log-in-block .button:first-child{
+    margin-right: 3px;
+}
+.log-in-block .button:last-child{
+    margin-left: 3px;
+}
+.log-in-block .button{
+    font-size: 12px;
+    font-family:Arial;
+    line-height: 18px;
+    color: #0087e4;
+    cursor: pointer;
+}
+.log-in-block{
+    font-size: 12px;
+    font-family:Arial;
+    color: #3b4247;
+    line-height: 18px;
+    display: inline-block;
+    min-width: 160px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
