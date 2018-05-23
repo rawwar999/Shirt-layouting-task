@@ -50,7 +50,7 @@ module.exports = function(grunt) {
                 files:{
                   //   'css/index.bundle.min.css': ['css/index.css','css/normalize.css']    // обьеденяет и минифицирует "MAIN"
                   // './css/form.bundle.min.css': ['css/form.css', 'css/normalize.css'] // обьеденяет и минифицирует "FORM"
-                    './css/style.min.css': ['css/style.css', 'css/normalize.css', 'css/animate.css'] // обьеденяет и минифицирует "GALLERY"
+                    './css/style.min.css': ['css/style.css', 'css/normalize.css'] // обьеденяет и минифицирует "GALLERY"
                 }
             }
         },

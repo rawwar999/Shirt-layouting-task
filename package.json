@@ -26,5 +26,8 @@
   "scripts": {
     "build": "grunt build",
     "start": "npm run build && grunt serve"
+  },
+  "dependencies": {
+    "circletype": "^2.2.0"
   }
 }
