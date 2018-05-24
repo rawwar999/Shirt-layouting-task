@@ -42,7 +42,7 @@
   justify-content: space-between;
   max-width: 950px;
   margin:0px auto;
-  padding-bottom:11px;
+  padding-bottom:5px;
   padding-top: 15px;
 }
 ul {
@@ -109,6 +109,9 @@ li {
   height: 31px;
   border: 1px solid #2ea6ed;
   border-radius: 50%;
+  text-indent: 9999px;
+  overflow: hidden;
+  color: transparent;
   cursor: pointer;
 }
 .social-block .button-vk {
@@ -281,6 +284,9 @@ li {
   line-height: 32px;
   text-decoration: none;
 }
+.info-block li:last-child a {
+  margin-right: 0;
+}
 .info-block a:hover {
   color: #0193e9;
   text-decoration: underline;
@@ -293,7 +299,8 @@ li {
 .assortment-block a {
   display: inline-block;
   position: relative;
-  margin-right: 20px;
+  padding-right: 10px;
+  padding-left:10px;
   padding-bottom: 14px;
   color: #676767;
   font-family: Arial;
@@ -306,6 +313,7 @@ li {
 .assortment-block a:hover::before {
   content: "";
   top: 46px;
+  left: 0;
   position: absolute;
   width: 100%;
   height: 1px;
@@ -319,6 +327,9 @@ li {
   height: 300px;
 }
 .share-block .title {
+  padding-top:40px;
+  padding-bottom: 30px;
+
   text-align: center;
   color: #0193e9;
   font-family: "intro";
@@ -397,6 +408,7 @@ li {
 .t-shirts-block .title {
   position: relative;
   text-align: center;
+  padding-top: 40px;
   margin-bottom: 10px;
   color: #0193e9;
   font-family: Arial;
@@ -407,7 +419,7 @@ li {
 .t-shirts-block .title::before {
   content: "";
   position: absolute;
-  top: 40px;
+  top: 80px;
   left: 50%;
   margin-left: -28px;
   width: 56px;
@@ -417,7 +429,7 @@ li {
 .t-shirts-block .link {
   display: block;
   width: 105px;
-  margin: 0 auto;
+  margin: 0 auto 5px auto;
   color: #0193e9;
   font-family: Georgia;
   font-size: 12px;
@@ -438,11 +450,14 @@ li {
   display: inline-block;
   width: 227px;
   height: 423px;
+  padding-top: 20px;
+  border: 3px solid transparent;
+  cursor: pointer;
 }
 .t-shirt-container li .photo {
-  padding-top:20px;
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
 }
 .t-shirt-container li .discount {
   position: absolute;
@@ -462,7 +477,6 @@ li {
   z-index: 10;
 }
 .t-shirt-container li .name {
-  padding-top: 20px;
   text-align: center;
   color: #0193e9;
   font-family: Arial;
@@ -531,12 +545,13 @@ li {
 .t-shirt-container li:hover .quick-buy-text {
   display: block;
 }
-.t-shirts-block div {
-  text-align: center;
+.t-shirts-block {
+  display: flex;
+  flex-direction:column;
 }
 .t-shirts-block .more-product {
   display: inline-block;
-  padding-bottom:5px;
+  align-items: center;
   border-bottom:1px dashed #0193e9;
   color: #0193e9;
   font-family:Georgia;
@@ -662,6 +677,7 @@ li {
    margin-bottom:10px;
  }
 .news .least-news {
+  margin: 0;
   display: inline-block;
   color: #0193e9;
   font-family:Arial;
@@ -690,6 +706,7 @@ li {
   line-height: 22px;
 }
 .news-list .title {
+  margin: 0;
   color: #0085e3;
   font-family:Arial;
   font-size: 14px;
@@ -697,6 +714,7 @@ li {
   line-height: 22px;
 }
 .news-list .text {
+  margin: 0;
   color: #676767;
   font-family:Arial;
   font-size: 12px;
@@ -711,6 +729,7 @@ li {
   margin-bottom:10px;
 }
 .review .review-info {
+  margin: 0;
   display: inline-block;
   color: #0193e9;
   font-family:Arial;
@@ -759,6 +778,7 @@ li {
   line-height: 12px;
 }
 .review-list .name {
+  margin: 0;
   color: #2e353a;
   font-family:Arial;
   font-size: 14px;
@@ -766,6 +786,7 @@ li {
   line-height: 22px;
 }
 .review-list .text {
+  margin: 0;
   color: #676767;
   font-family:Arial;
   font-size: 12px;
@@ -790,6 +811,7 @@ li {
   display: block;
 }
 .product .title {
+  margin: 0;
   color: #676767;
   font-family:Arial;
   font-weight:bold;
@@ -806,6 +828,7 @@ li {
   display: block;
 }
 .service .title {
+  margin: 0;
   color: #676767;
   font-family:Arial;
   font-weight:bold;
@@ -822,6 +845,7 @@ li {
   display: block;
 }
 .contacts .title {
+  margin: 0;
   color: #676767;
   font-family:Arial;
   font-weight:bold;
@@ -838,9 +862,6 @@ li {
   display: block;
   line-height: 38px;
 }
-.social-media  .media ul {
-  margin-bottom: 5px;
-}
 .social-media  .media .button {
     position: relative;
     display: inline-block;
@@ -848,8 +869,11 @@ li {
     height: 31px;
     border: 1px solid #fcf182;
     border-radius: 50%;
+    text-indent: 9999px;
+    overflow: hidden;
+    color: transparent;
     cursor: pointer;
-  }
+}
 .social-media  .media .button-vk {
     background-image: url("../img/vk.png");
     background-position: center;
@@ -932,7 +956,6 @@ li {
   top: 0px;
   background-image: url("../img/phone.png");
 }
-
 .all-info .phones li{
   display: block;
   color: #676767;
@@ -949,6 +972,8 @@ li {
   padding-bottom: 5px;
 }
 .footer .text {
+  padding-top: 40px;
+  padding-bottom: 30px;
   color: #818181;
   font-family:Arial;
   font-size:11px;
