@@ -10,251 +10,252 @@
   font-family: 'pfdindisplaypro';
   src: url("../fonts/pfdindisplaypro-reg.ttf");
 }
+
 .resize {
   max-width: 950px;
   margin: 0 auto;
 }
-.top-lane{
+.top-lane {
+  position: relative;
   width: 100%;
   height: 6px;
   background-color: #f8e27b;
-  position: relative;
 }
-.top-lane:before{
+.top-lane:before {
   content: "";
+  position: absolute;
   width: 20px;
   height: 20px;
-  background-color: #f8e27b;
-  position: absolute;
   top: 0%;
   left: 50%;
   margin-top: -8px;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+  background-color: #f8e27b;
 }
-.header{
-  max-width: 950px;
-  margin: 15px auto 11px auto;
+.create-sell-block {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  max-width: 950px;
+  margin:0px auto;
+  padding-bottom:11px;
+  padding-top: 15px;
 }
-ul{
+ul {
   display: inline-block;
   padding: 0;
   margin: 0;
   vertical-align: middle;
 }
 li {
-  list-style: none;
   display: inline-block;
+  list-style: none;
 }
 .sell-block .button {
+  position: relative;
+  display: inline-block;
+  height: auto;
   width: 83px;
-  height: 21px;
+  padding-left: 33px;
+  padding-top: 7px;
+  padding-bottom:6px;
+  vertical-align: middle;
   border-radius: 30px 30px 30px 30px;
   text-decoration: none;
   background-color: #fae851;
-  display: inline-block;
-  position: relative;
   font-family: Arial;
   color: #4e443b;
   font-size: 14px;
-  font-weight:bold;
-  padding-left: 33px;
-  vertical-align: middle;
-  padding-top:6px;
+  font-weight: bold;
   cursor: pointer;
 }
-.sell-block li:first-child{
+.sell-block li:first-child {
   margin-right: 10px;
 }
-.sell-block .button-create:before{
-  content:'';
+.sell-block .button-create:before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 19px;
+  height: 18px;
   background-image: url(../img/pencil.png);
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.sell-block .button-sell:before {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4px;
   width: 19px;
   height: 18px;
-  position: absolute;
-  background-position: center;
-  background-repeat:no-repeat;
-  left:8px;
-  top: 4px;
-}
-.sell-block .button-sell:before{
-  content:'';
   background-image: url(../img/money.png);
-  width: 19px;
-  height: 18px;
-  position: absolute;
   background-position: center;
-  background-repeat:no-repeat;
-  left:8px;
-  top: 4px;
+  background-repeat: no-repeat;
 }
-.social-block{
+.social-block {
   margin-left: 35px;
 }
-.social-block .button{
+.social-block .button {
+  position: relative;
+  display: inline-block;
   width: 31px;
   height: 31px;
   border: 1px solid #2ea6ed;
   border-radius: 50%;
-  display: inline-block;
   cursor: pointer;
-  position: relative;
 }
-.social-block .button-vk{
-  background-image:url("../img/vk.png");
+.social-block .button-vk {
+  background-image: url("../img/vk.png");
   background-position: center;
   background-repeat: no-repeat;
 }
-.social-block .button-ok{
-  background-image:url("../img/ok.png");
+.social-block .button-ok {
+  background-image: url("../img/ok.png");
   background-position: center;
   background-repeat: no-repeat;
 }
-.social-block .button-fb{
-  background-image:url("../img/fb.png");
+.social-block .button-fb {
+  background-image: url("../img/fb.png");
   background-position: center;
   background-repeat: no-repeat;
 }
 .contact-block .button {
+  position: relative;
   color: #0087e4;
   font-size: 12px;
-  line-height:22px;
+  line-height: 22px;
   font-family: Arial;
-  position: relative;
 }
-.contact-block li{
-  margin-right:40px;
+.contact-block li {
+  margin-right: 40px;
 }
-.contact-block li:last-child{
+.contact-block li:last-child {
   margin-right: 0;
 }
-.contact-block .button-skype:before{
+.contact-block .button-skype:before {
   content: '';
   position: absolute;
-  background-image:url("../img/skype.png");
   width: 16px;
   height: 16px;
   left: -20px;
   top: 0px;
+  background-image: url("../img/skype.png");
 }
-.contact-block .button-icq:before{
+.contact-block .button-icq:before {
   content: '';
   position: absolute;
-  background-image:url("../img/icq.png");
   width: 16px;
   height: 16px;
   left: -20px;
   top: 0px;
+  background-image: url("../img/icq.png");
 }
-.contact-block .button-email:before{
+.contact-block .button-email:before {
   content: '';
   position: absolute;
-  background-image:url("../img/email.png");
   width: 16px;
   height: 16px;
   left: -20px;
   top: 0px;
+  background-image: url("../img/email.png");
 }
-.lane{
+.lane {
   width: 100%;
   border-bottom: 1px solid #b2def8;
-
 }
-
-.top-block {
+.main-logo-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content:space-between;
-  max-width:950px;
-  margin:auto;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 950px;
+  margin: auto;
   padding-top: 30px;
 }
-.top-block .left-block{
-  max-width:170px;
+.main-logo-block .call-in-block {
   display: inline-block;
+  max-width: 170px;
 }
-.top-block .phone{
+.main-logo-block .phone {
   font-size: 16px;
   font-family: Arial;
-  font-weight:bold;
-  color:#676767;
-  max-width:170px;
+  font-weight: bold;
+  color: #676767;
+  max-width: 170px;
   display: inline-block;
 }
-.phone a{
+.phone a {
+  margin-right: 8px;
+  border-bottom: 1px dashed #0087e4;
+  color: #0087e4;
   font-family: Arial;
   font-size: 12px;
   line-height: 18px;
-  color: #0087e4;
+  font-weight: 400;
   text-decoration: none;
-  border-bottom: 1px dashed #0087e4;
   cursor: pointer;
-  margin-right:8px;
-  font-weight:400;
 }
-.log-in-block .button:first-child{
+.log-in-block .button:first-child {
   margin-right: 3px;
 }
-.log-in-block .button:last-child{
+.log-in-block .button:last-child {
   margin-left: 3px;
 }
-.log-in-block .button{
-  font-size: 12px;
-  font-family:Arial;
-  line-height: 18px;
+.log-in-block .button {
   color: #0087e4;
+  font-size: 12px;
+  font-family: Arial;
+  line-height: 18px;
   cursor: pointer;
 }
-.log-in-block{
-  font-size: 12px;
-  font-family:Arial;
-  color: #3b4247;
-  line-height: 18px;
+.log-in-block {
   display: inline-block;
   min-width: 160px;
   margin-top: 25px;
+  color: #3b4247;
+  font-size: 12px;
+  font-family: Arial;
+  line-height: 18px;
 }
-
 .logo {
+  display: inline-block;
   width: 234px;
   height: 61px;
   background: url("../img/logo.png") center no-repeat;
-  display: inline-block;
 }
-
 .order-block {
   display: inline-block;
 }
-
 .order-block .button {
-  display: block;
   position: relative;
-  font-size:12px;
-  line-height: 14px;
+  display: block;
   color: #0193e9;
-  font-family:"Arial";
+  font-size: 12px;
+  line-height: 14px;
+  font-family: "Arial";
 }
-
 .order-block .button:first-child {
   margin-bottom: 23px;
 }
-
 .order-block .bucket::before {
   content: "";
   position: absolute;
   left: -23px;
-  transform: translate(0,-3px);
+  -webkit-transform: translate(0, -3px);
+  transform: translate(0, -3px);
   width: 19px;
   height: 18px;
   background: url("../img/bucket.png");
-
 }
-
 .order-block .my-order::before {
   content: "";
   position: absolute;
@@ -264,52 +265,45 @@ li {
   height: 14px;
   background: url("../img/hard.png");
 }
-
 .info-block {
-  display: block;
-  max-width:675px;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   padding-top: 30px;
-
 }
-
-.info-block .element {
+.info-block a {
   display: inline-block;
-  margin-right:10px;
+  margin-right: 15px;
   color: #676767;
-  font-family:Georgia;
+  font-family: Georgia;
   font-style: italic;
   font-size: 14px;
   line-height: 32px;
   text-decoration: none;
 }
-
-.info-block .element:hover {
+.info-block a:hover {
   color: #0193e9;
   text-decoration: underline;
 }
-
 .assortment-block {
-  display: block;
-  max-width:850px;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
 }
-
-.assortment-block .element {
+.assortment-block a {
   display: inline-block;
   position: relative;
-  margin-right:15px;
-  padding-bottom:14px;
+  margin-right: 20px;
+  padding-bottom: 14px;
   color: #676767;
-  font-family:Arial;
-  font-weight:bold;
-  font-size:14px;
-  line-height:32px;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 32px;
   text-decoration: none;
-  text-transform:uppercase;
-  }
-
-.assortment-block .element:hover::before {
+  text-transform: uppercase;
+}
+.assortment-block a:hover::before {
   content: "";
   top: 46px;
   position: absolute;
@@ -317,228 +311,656 @@ li {
   height: 1px;
   background-color: #0193e9;
 }
-
-.main {
-  border-top:1px solid #fbeca7;
+.shop-window-block {
+  border-top: 1px solid #fbeca7;
+  background-image: url("../img/top-bg.svg");
+  background-size: cover;
+  width:100%;
+  height: 300px;
 }
-
 .share-block .title {
   text-align: center;
-  font-family:"intro";
+  color: #0193e9;
+  font-family: "intro";
   font-size: 22px;
   text-transform: uppercase;
   line-height: 22px;
-  color: #0193e9;
 }
-
-.feature-block {
+.feature-block ul {
   display: block;
 }
-
-.feature-block .feature {
-  font-size:14px;
-  font-family:Georgia;
+.feature-block ul .feature {
+  color: #2c3236;
+  font-size: 14px;
+  font-family: Georgia;
   font-style: italic;
   line-height: 32px;
-  color: #2c3236;
 }
-
-.feature-block .title {
+.feature-block ul .title {
+  color: #676767;
   font-size: 14px;
-  font-family:Arial;
-  font-weight:bold;
+  font-family: Arial;
+  font-weight: bold;
   text-transform: uppercase;
   line-height: 32px;
-  color: #676767;
 }
-
-.feature-block .text {
-  font-family:Arial;
+.feature-block ul .text {
+  padding-bottom: 15px;
+  color: #31363a;
+  font-family: Arial;
   font-size: 12px;
   line-height: 18px;
-  color: #31363a;
-  padding-bottom: 15px;
 }
-
-.feature-block .more-info {
-  font-family:Arial;
+.feature-block ul .more-info {
+  color: #0193e9;
+  font-family: Arial;
   font-size: 12px;
   line-height: 14px;
-  color: #0193e9;
 }
-
-.feature-block li {
-  width:215px;
+.feature-block ul li {
+  width: 215px;
   height: 150px;
   padding-left: 85px;
   position: relative;
-  margin-right:20px;
+  margin-right: 20px;
 }
-
-.feature-block li:last-child {
+.feature-block ul li:last-child {
   margin-right: 0;
 }
-
-.feature-block li:first-child::before {
+.feature-block ul li:first-child::before {
   content: "";
   position: absolute;
-  top:5px;
-  left:5px;
+  top: 5px;
+  left: 5px;
   width: 63px;
   height: 63px;
-  background:url("../img/brush.png") center no-repeat;
+  background: url("../img/brush.png") center no-repeat;
 }
-
-.feature-block li:nth-child(2)::before {
+.feature-block ul li:nth-child(2)::before {
   content: "";
   position: absolute;
-  top:5px;
-  left:5px;
+  top: 5px;
+  left: 5px;
   width: 63px;
   height: 63px;
-  background:url("../img/call-center.png") center no-repeat;
+  background: url("../img/call-center.png") center no-repeat;
 }
-
-.feature-block li:last-child::before {
+.feature-block ul li:last-child::before {
   content: "";
   position: absolute;
-  top:5px;
-  left:5px;
+  top: 5px;
+  left: 5px;
   width: 63px;
   height: 63px;
-  background:url("../img/delivary.png") center no-repeat;
+  background: url("../img/delivary.png") center no-repeat;
 }
-
 .t-shirts-block .title {
   position: relative;
   text-align: center;
-  font-family:Arial;
-  font-size: 22px;
-  font-weight:bold;
-  line-height: 32px;
+  margin-bottom: 10px;
   color: #0193e9;
-  margin-bottom:10px;
+  font-family: Arial;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 32px;
 }
-
 .t-shirts-block .title::before {
   content: "";
   position: absolute;
   top: 40px;
   left: 50%;
-  margin-left:-28px;
+  margin-left: -28px;
   width: 56px;
   height: 2px;
   background-color: #000000;
 }
-
 .t-shirts-block .link {
   display: block;
-  width:105px;
-  margin:0 auto;
-
+  width: 105px;
+  margin: 0 auto;
+  color: #0193e9;
   font-family: Georgia;
   font-size: 12px;
   font-style: italic;
   line-height: 32px;
-  color: #0193e9;
 }
-
-.t-shirt-container{
-  width: 233px;
-  height: 429px;
+.t-shirt-container {
   position: relative;
-  border: 3px solid transparent;
+  display: flex;
 }
-
-.t-shirt-container li:hover{
-    border: 3px solid #0193e9;
+.t-shirt-container li:hover {
+  border: 3px solid #0193e9;
 }
-
-.t-shirt-container .element {
+.t-shirt-container li {
+  position: relative;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: inline-block;
   width: 227px;
   height: 423px;
 }
-
-.t-shirt-container .element .quick-buy {
+.t-shirt-container li .photo {
+  padding-top:20px;
+  width: 100%;
+  height: auto;
 }
-
-.t-shirt-container .element .name {
-  padding-top: 20px;
-  text-align: center;
+.t-shirt-container li .discount {
+  position: absolute;
+  width: 39px;
+  height: 37px;
+  top:10px;
+  left: 150px;
+  padding-left: 8px;
+  padding-top: 10px;
+  border-radius: 50%;
+  background-color: #f4e23b;
+  color: #0087e3;
   font-family:Arial;
   font-size: 14px;
   font-weight:bold;
-  line-height: 18px;
-  color: #0193e9;
+  line-height: 27px;
+  z-index: 10;
 }
-
-.t-shirt-container .element .alternative-name {
+.t-shirt-container li .name {
+  padding-top: 20px;
   text-align: center;
-  font-family:Arial;
+  color: #0193e9;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 18px;
+}
+.t-shirt-container li .alternative-name {
+  color: #32393d;
+  text-align: center;
+  font-family: Arial;
   font-size: 14px;
   line-height: 18px;
-  color: #32393d;
 }
-
-.t-shirt-container .element .price {
+.t-shirt-container li .price {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  font-family:Arial;
-  font-size:18px;
-  font-weight:bold;
   color: #676767;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
 }
-
-.t-shirt-container .element .price span {
-  font-family:Arial;
-  font-size:14px;
-  font-weight:bold;
+.t-shirt-container li .price span {
   color: #676767;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
 }
-
-.t-shirt-container .element .buy {
+.t-shirt-container li .buy {
   position: relative;
   width: 65px;
-  height: 21px;
+  height: auto;
   display: block;
-  padding-left:31px;
-  padding-top:6px;
-  margin:0 auto;
-
-  border-radius:30px;
+  padding-left: 31px;
+  padding-top: 6px;
+  padding-bottom:6px;
+  margin: 0 auto;
+  border-radius: 30px;
   color: #4e443b;
   background-color: #fae851;
-  font-family:Arial;
-  font-weight:bold;
+  font-family: Arial;
+  font-weight: bold;
   font-size: 14px;
   text-decoration: none;
 }
-
-.t-shirt-container .element .buy::before {
+.t-shirt-container li .buy::before {
   content: "";
   position: absolute;
-  top:7px;
-  left:7px;
+  top: 7px;
+  left: 7px;
   width: 19px;
   height: 18px;
   background: url("../img/bucket-2.png") center no-repeat;
 }
-
-.t-shirt-container .element .quick-buy-text {
- text-align: center;
-  padding-top:8px;
+.t-shirt-container li .quick-buy-text {
+  padding-top: 8px;
   text-align: center;
   color: #0193e9;
-  font-family:Georgia;
+  font-family: Georgia;
   font-size: 12px;
   font-style: italic;
   line-height: 32px;
   display: none;
 }
-
-.t-shirt-container .element:hover .quick-buy-text {
+.t-shirt-container li:hover .quick-buy-text {
   display: block;
+}
+.t-shirts-block div {
+  text-align: center;
+}
+.t-shirts-block .more-product {
+  display: inline-block;
+  padding-bottom:5px;
+  border-bottom:1px dashed #0193e9;
+  color: #0193e9;
+  font-family:Georgia;
+  font-style: italic;
+  font-size: 22px;
+  line-height: 32px;
+  text-decoration: none;
+
+}
+.novelty-season-block .title {
+  text-align: center;
+  color: #0193e9;
+  font-family:Arial;
+  font-size:45px;
+  line-height: 113px;
+  font-weight:bold;
+
+}
+.novelty-season-block .lane {
+}
+.mini-t-shirt-container {
+  display: flex;
+  justify-content: center;
+  border-top:1px solid #b2def8;
+  border-bottom:1px solid #b2def8;
+
+}
+.mini-t-shirt-container li {
+  width: 135px;
+  height: 255px;
+}
+.mini-t-shirt-container .photo {
+  padding-top: 20px;
+  padding-bottom:7px;
+  width: 100%;
+  height: auto;
+}
+.mini-t-shirt-container .price {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: #676767;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+}
+.mini-t-shirt-container .price span {
+  color: #676767;
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+}
+.mini-t-shirt-container .buy {
+  position: relative;
+  width: 65px;
+  height: auto;
+  display: block;
+  padding-left: 31px;
+  padding-top: 6px;
+  padding-bottom:6px;
+  margin: 0 auto;
+  border-radius: 30px;
+  color: #4e443b;
+  background-color: #fae851;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+.mini-t-shirt-container .buy::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 19px;
+  height: 18px;
+  background: url("../img/bucket-2.png") center no-repeat;
+}
+.discount-news-review {
+  padding-bottom:205px;
+}
+.discount-news-review .container{
+  display: flex;
+  justify-content: center;
+}
+.discount-news-review .discount {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+.discount-news-review .discount .title {
+  display: inline-block;
+  width: 440px;
+  height: auto;
+  color: #0193e9;
+  font-family:Arial;
+  font-weight:bold;
+  font-size: 40px;
+  line-height: 40px;
+}
+.discount-news-review .discount .discount-percent {
+  display: inline-block;
+  color: #f2de36;
+  font-family:Arial;
+  font-size: 103px;
+  line-height: 103px;
+  font-weight:bold;
+
+}
+.discount-news-review .discount .photo {
+  width: 190px;
+  height: 176px;
+}
+.news {
+  width: 425px;
+  margin-right: 57px;
+}
+.news > div {
+  display: flex;
+  justify-content: space-between;
+   margin-bottom:10px;
+ }
+.news .least-news {
+  display: inline-block;
+  color: #0193e9;
+  font-family:Arial;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight:bold;
+}
+.news .all-news {
+  color: #0193e9;
+  font-family:Georgia;
+  font-style: italic;
+  font-size:12px;
+  line-height: 32px;
+}
+.news .news-list {
+  border-top: 1px solid #b2def8;
+}
+.news-list li {
+  display: block;
+}
+.news-list .date {
+  padding-top: 15px;
+  color: #676767;
+  font-family:Arial;
+  font-size: 12px;
+  line-height: 22px;
+}
+.news-list .title {
+  color: #0085e3;
+  font-family:Arial;
+  font-size: 14px;
+  font-weight:bold;
+  line-height: 22px;
+}
+.news-list .text {
+  color: #676767;
+  font-family:Arial;
+  font-size: 12px;
+  line-height: 18px;
+}
+.review {
+  width: 425px;
+}
+.review > div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:10px;
+}
+.review .review-info {
+  display: inline-block;
+  color: #0193e9;
+  font-family:Arial;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight:bold;
+}
+.review .all-reviews {
+  color: #0193e9;
+  font-family:Georgia;
+  font-style: italic;
+  font-size:12px;
+  line-height: 32px;
+}
+.review .review-list {
+  border-top: 1px solid #b2def8;
+}
+.review-list li {
+  position: relative;
+  display: block;
+  padding-left: 75px;
+}
+.review-list li:first-child::before{
+  content: "";
+  position: absolute;
+  left: -10px;
+  top:23px;
+  width: 73px;
+  height: 72px;
+  background: url("../img/man.png") center no-repeat;
+}
+.review-list li:last-child::before{
+  content: "";
+  position: absolute;
+  left: -10px;
+  top:23px;
+  width: 73px;
+  height: 72px;
+  background: url("../img/woman.png") center no-repeat;
+}
+.review-list .city {
+  padding-top: 25px;
+  color: #676767;
+  font-family:Arial;
+  font-size: 12px;
+  line-height: 12px;
+}
+.review-list .name {
+  color: #2e353a;
+  font-family:Arial;
+  font-size: 14px;
+  font-weight:bold;
+  line-height: 22px;
+}
+.review-list .text {
+  color: #676767;
+  font-family:Arial;
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer .all-info .product {
+  display: inline-block;
+  width: 120px;
+  margin-right: 50px;
+}
+.footer .all-info .service {
+  display: inline-block;
+  width: 120px;
+  margin-right: 50px;
+}
+.footer .all-info .contacts {
+  display: inline-block;
+  width: 120px;
+  margin-right: 50px;
+}
+.product li {
+  display: block;
+}
+.product .title {
+  color: #676767;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:14px;
+  line-height: 38px;
+}
+.product a {
+  color: #0085e3;
+  font-family:Arial;
+  font-size:12px;
+  line-height: 26px;
+}
+.service li {
+  display: block;
+}
+.service .title {
+  color: #676767;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:14px;
+  line-height: 38px;
+}
+.service a {
+  color: #0085e3;
+  font-family:Arial;
+  font-size:12px;
+  line-height: 26px;
+}
+.contacts li {
+  display: block;
+}
+.contacts .title {
+  color: #676767;
+  font-family:Arial;
+  font-weight:bold;
+  font-size:14px;
+  line-height: 38px;
+}
+.contacts a {
+  color: #0085e3;
+  font-family:Arial;
+  font-size:12px;
+  line-height: 26px;
+}
+.social-media  .media {
+  display: block;
+  line-height: 38px;
+}
+.social-media  .media ul {
+  margin-bottom: 5px;
+}
+.social-media  .media .button {
+    position: relative;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    border: 1px solid #fcf182;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+.social-media  .media .button-vk {
+    background-image: url("../img/vk.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.social-media  .media .button-ok {
+    background-image: url("../img/ok.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.social-media  .media .button-fb {
+    background-image: url("../img/fb.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.social-media  .skype-icq {
+  display: block;
+}
+.social-media  .skype-icq .button {
+  position: relative;
+  padding-left:25px;
+  color: #0087e4;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Arial;
+}
+.social-media  .skype-icq ul {
+  margin-bottom: 15px;
+}
+.social-media  .skype-icq ul li {
+  margin-right:25px;
+}
+.social-media  .skype-icq .button-skype::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 1px;
+  top: 0px;
+  background-image: url("../img/skype.png");
+}
+.social-media  .skype-icq .button-icq::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 1px;
+  top: -1px;
+  background-image: url("../img/icq.png");
+}
+.social-media  .call-email {
+  display: block;
+}
+.social-media  .call-email .button {
+  position: relative;
+  padding-left:25px;
+  color: #0087e4;
+  font-size: 12px;
+  line-height: 22px;
+  font-family: Arial;
+}
+.social-media  .call-email ul li {
+  margin-right:25px;
+}
+.social-media  .call-email .button-email:before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 2px;
+  top: 0px;
+  background-image: url("../img/email.png");
+}
+.social-media  .call-email .button-call-me:before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 15px;
+  left: 6px;
+  top: 0px;
+  background-image: url("../img/phone.png");
+}
+
+.all-info .phones li{
+  display: block;
+  color: #676767;
+  font-family:Arial;
+  font-size: 20px;
+  font-weight:bold;
+  line-height: 38px;
+
+}
+.all-info .phones li:nth-of-type(1) {
+  padding-bottom: 5px;
+}
+.all-info .phones li:nth-of-type(2) {
+  padding-bottom: 5px;
+}
+.footer .text {
+  color: #818181;
+  font-family:Arial;
+  font-size:11px;
+  line-height: 16px;
+}
+.footer .copyright {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: white;
+  background-color: #0085e3;
+  font-family:Arial;
+  font-size:12px;
+  line-height: 16px;
 }
